@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'crudfbvApp/base.html' %}
+
+{%block body_block%}
+
+<h1> Employee Updation Form</h1><hr>
+<form method='POST'>
+{% csrf_token %}
+Employee Number: <input type="text" name="enum" value={{employee.enum}}><br>
+Employee Name: <input type="text" name="ename" value={{employee.ename}}><br>
+Employee Salary: <input type="text" name="esal" value={{employee.esal}}><br>
+Employee Address: <input type="text" name="eaddr" value={{employee.eaddr}}><br>
+<p></p> 
+<input type="submit" name="" value="Update Record">
+</form>
+{% endblock %}
+

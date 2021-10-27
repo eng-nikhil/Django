@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Page</title>
+</head>
+<body>
+    <h1>Jobs for {{location}}</h1>
+    {%if jobs_list%}
+    <table border="1" >
+       <thead style="background-color: burlywood;">
+           <th>Date</th>
+           <th>Company</th>
+           <th>Title</th>
+           <th>Eligibility</th>
+           <th>Address</th>
+           <th>Email</th>
+           <th>Phone Number</th>
+       </thead>
+       {%for job in jobs_list%}
+       <tr>
+           <td>{{job.date}}</td>
+           <td>{{job.company}}</td>
+           <td>{{job.title}}</td>
+           <td>{{job.eligibility}}</td>
+           <td>{{job.Address}}</td>
+           <td>{{job.email}}</td>
+           <td>{{job.phonenumber}}</td>
+       </tr>
+       {% endfor %}
+    </table>
+   {% else %}
+   <p>No Data found</p> 
+   {%endif%}   
+</body>
+</html>

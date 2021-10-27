@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'crudfbvApp/base.html' %}
+
+{%block body_block%}
+
+<h1> Employee Information Dashboard </h1>
+<table border=2>
+<thead >
+<th>Employee Num</th>
+<th>Employee Name</th>
+<th>Employee Salary</th>
+<th>Employee Address</th>
+<th>Actions</th>
+</thead>
+{% for emp in employees%}
+<tr>
+<td>{{emp.enum}}</td>
+<td>{{emp.ename}}</td>
+<td>{{emp.esal}}</td>
+<td>{{emp.eaddr}}</td>
+<td><a href='/update/{{emp.id}}'> Update  </a> &nbsp <a href='/delete/{{emp.id}}'> Delete </a> </td>
+</tr>
+{% endfor %}
+
+</table>
+<p></p>
+<a href='create/' class= 'btn btn-success btn-primary'> Insert New Employee  </a>
+{% endblock %}
+

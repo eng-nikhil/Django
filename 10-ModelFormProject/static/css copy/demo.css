@@ -1,0 +1,20 @@
+h1{
+
+   text-align: center;
+
+}
+.container{
+    margin-top: 100px;
+    background: cyan;
+    color: darkblue;
+    border-radius: 20%;
+  
+}
+body{
+    background: darkgray;
+}
+.thankscontainer{
+    margin-top: 100px;
+    color: darkblue;
+      
+}

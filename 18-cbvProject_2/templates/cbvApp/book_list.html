@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'cbvApp/base.html' %}
+{% block body_block %}
+<h1> Using Default Template </h1> <hr>
+{% for book in book_list%}
+<ul>
+<li>Book Name: {{book.title}}</li>
+<li>Book Author: {{book.author}}</li>
+<li>Number of Pages: {{book.pages}}</li>
+<li>Book price: {{book.price}}</li>
+</ul>
+
+{% endfor %}
+
+{% endblock  %}

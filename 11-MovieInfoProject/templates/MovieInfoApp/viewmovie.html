@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Page</title>
+          <link rel="stylesheet" href="{%static 'bootstrap-5.1.1-dist/css/bootstrap.css' %}">
+      <link rel="stylesheet" href="{%static 'css/demo.css' %}">
+</head>
+<body>
+<div class="container">
+    <h1>Movie List</h1>
+    {%if movie_list%}
+    <table border="1" >
+       <thead style="background-color: burlywood;">
+           <th>Name</th>
+           <th>Actor</th>
+           <th>Actoress</th>
+           <th>Rating</th>
+       </thead>
+       {%for movie in movie_list%}
+       <tr>
+           <td>{{movie.name}}</td>
+           <td>{{movie.actor}}</td>
+           <td>{{movie.actoress}}</td>
+           <td>{{movie.rating}}</td>
+       </tr>
+       {% endfor %}
+    </table>
+   {% else %}
+   <p>No Data found</p> 
+   {%endif%}   
+    <a class='btn btn-primary mybtn' href='/addmovie' role='button'> Add Movie </a>
+    <a class='btn btn-primary mybtn' href='/homepage' role='button'> Go to Home Page</a>
+</div>
+</body>
+</html>

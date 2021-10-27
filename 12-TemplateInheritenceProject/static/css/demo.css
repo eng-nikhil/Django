@@ -1,0 +1,26 @@
+h1{
+
+    text-align: center;
+ 
+ }
+ .container{
+    margin-top: 100px;
+    color: darkblue;
+    
+    
+   
+ }
+ .thankscontainer{
+     margin-top: 100px;
+     color: darkblue;
+       
+ }
+ .mybtn{
+    position:relative;
+    left:40%;
+}
+body{
+    
+    background:url(https://media.istockphoto.com/photos/white-hexagons-mosaic-3d-render-picture-id941875534)
+    
+}

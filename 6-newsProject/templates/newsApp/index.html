@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{%static 'css/demo.css' %}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap-5.1.1-dist/css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container">
+    <h1> Welcome to News Portal</h1>
+    <div class="card-group">
+    <div class="notecard card mx-2 my-2" style="width: 18rem;">
+        <img src="{%static 'images/sports.jpg' %}" class="card-img-top" alt="Image Not found" width="300" height="300" >
+        <div class="card-body">
+          <h5 class="card-title">Sports</h5>
+          <p class="card-text">Cricket, football, rugby....</p>
+          <a href="/sportsinfo" class="btn btn-primary">Sports Page</a>
+        </div>
+      </div>
+      <div class="notecard card mx-2 my-2" style="width: 18rem;">
+        <img src="{%static 'images/movies.jpg' %}" class="card-img-top" alt="Image Not found" width="300" height="300" >
+        <div class="card-body">
+          <h5 class="card-title">Movies</h5>
+          <p class="card-text">Hollywood,bollywood,kollywood..</p>
+          <a href="/moviesinfo" class="btn btn-primary">Movies Pages</a>
+        </div>
+      </div> 
+      <div class="notecard card mx-2 my-2" style="width: 18rem;">
+        <img src="{%static 'images/politics.jpg' %}" class="card-img-top" alt="Image Not found" width="300" height="300" >
+        <div class="card-body">
+          <h5 class="card-title">Politics</h5>
+          <p class="card-text">Polticial issues</p>
+          <a href="/politicsinfo" class="btn btn-primary">Politics Page</a>
+        </div>
+      </div>   
+    </div>  
+    </div>
+    
+</div>
+   
+</body>
+</html>
